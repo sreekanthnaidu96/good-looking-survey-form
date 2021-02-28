@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form id="survey-form" method="POST">
+      <div class="outside">
+        <h1>Please Fill your Details For The Survey</h1>
+      </div>
+      <p id="im">
+        <strong>Note:</strong>This Form Must Be Finished In Order To Participate
+      </p>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            class="field"
+            type="text"
+            required
+            id="name"
+            placeholder="Enter Your Name Here"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="address">Address:</label>
+          <input
+            class="field"
+            required
+            type="address"
+            id="address"
+            placeholder="Enter Your Address Here"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label>
+          <input
+            class="field"
+            type="email"
+            required
+            id="email"
+            placeholder="Please Enter Your Email"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="phone">Phone-number</label>
+          <input
+            class="field"
+            type="number"
+            required
+            id="phone"
+            placeholder="Please Enter Your Phone Number"
+            max="9"
+            min="0"
+          />
+        </div>
+        <div>
+          <label for="iq">IQ</label>
+          <input
+            class="field"
+            type="number"
+            required
+            id="iq"
+            placeholder="Please Enter Your IQ"
+            max="9"
+            min="0"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="gender">Gender:</label>
+          <p>
+            <input type="radio" name="gender" value="male" checked />Male<br />
+            <input type="radio" name="gender" value="female" />Female<br />
+            <input type="radio" name="gender" value="other" />Other<br />
+          </p>
+        </div>
+        <div>
+          <label for="dob">Date Of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Check All That Apply</legend>
+        <p>
+          <input type="checkbox" />I'm 18+ <br />
+          <input type="checkbox" />I'm not sleeping <br />
+          <input type="checkbox" />I accept all the conditions<br />
+          <input type="checkbox" />I'm not on drugs <br />
+          <input type="checkbox" />I'm currently single <br />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Educational Qualifications</legend>
+        <div>
+          <label for="education"
+            >Select Your Highest Educational Qualification:</label
+          >
+          <select id="drop down">
+            <option value="M.Tech">M.Tech</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="Inter Mediate">Inter Mediate</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Your Opinion</legend>
+        <div>
+          <label for="input field">About Yourself: </label>
+          <textarea
+            id="input field"
+            cols="30"
+            rows="10"
+            placeholder="Tell Us About You......"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="problem">Your Suggestions:</label>
+          <textarea
+            id="problem"
+            cols="30"
+            rows="10"
+            placeholder="What Do You Suggest To Us...."
+          ></textarea>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Bug Proofs</legend>
+        <div>
+          <label for="screen-shot"
+            >Please Upload The Photo Or Video Of The Bug</label
+          >
+          <input type="file" id="screen-shot" />
+        </div>
+      </fieldset>
+      <div id="submit">
+        <button id="but" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

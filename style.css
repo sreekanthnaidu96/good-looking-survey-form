@@ -1,0 +1,68 @@
+body {
+  font-family: "anaheium" Arial, sans-serif;
+  background-color: lightgoldenrodyellow;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.outside {
+  text-align: center;
+  text-transform: uppercase;
+}
+#im {
+  margin-left: 20px;
+}
+form {
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+fieldset {
+  margin: 20px;
+  border: 1px solid black;
+}
+#survey-form {
+  background-color: lightgreen;
+}
+legend {
+  font-weight: 700;
+}
+div {
+  margin-top: 1px;
+}
+label {
+  width: 80px;
+  text-align: left;
+}
+.field {
+  width: 200px;
+  border: 1px solid black;
+}
+.field:focus,
+textarea:focus {
+  border: 1px solid gray;
+}
+textarea {
+  vertical-align: top;
+}
+#submit {
+  display: flex;
+  justify-content: center;
+}
+#but {
+  padding: 5px;
+  color: blue;
+  background-color: greenyellow;
+  text-transform: capitalize;
+  border: 2px solid blue;
+  transition: all 2s;
+}
+#but:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  color: greenyellow;
+  background-color: blue;
+}
+textarea{
+	resize:none;
+}
